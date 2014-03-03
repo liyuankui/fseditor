@@ -105,7 +105,7 @@
 
     showOverlay: function() {
 
-      $('<div class="fs-editor-overlay" />').appendTo('body')
+      $('<div class="fs-editor-overlay" />').insertAfter($el)
                                             .fadeTo(settings.transition == '' ? 0 : transitionDuration, 1)
                                             .click(function() { methods.minimize(); });
 
